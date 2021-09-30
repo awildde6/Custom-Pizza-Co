@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Custom Pizza Co- Hours</title>
+    <!--
+         Spotted Wren Garden Center Hours page
+         Filename: hours.html
+      
+         Author: Allison Adams, Laith, Alani  
+         Date: 9/13/2021    
+         HTML5 and CSS3 Illustrated Unit G, Independent Challenge 1
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr.custom.40753.js"></script>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="icon" sizes="192x192" href="images/android.png">
+   </head>
+   <body>
+      <div class="container">
+         <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p> 
+         <header>
+           
+            <div>
+               <a href="index.html"><img src="images/FoodPhoto.jpg" width="864" height="184" alt="Spotted enter"></a>
+            </div>
+         </header>
+         <nav class="sitenavigation">
+            <ul>
+               <p><a href="index.html">Home</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="hours.html">Hours & Menu</a></p>
+            <p><a href="whattoexpect.html">What to Expect</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+         </nav>
+         <article id="contentstart">
+            <h2>Your form has been submitted</h2>
+               <h3>You entered the following data:</h3>
+         
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+         </article>
+         <footer>
+            <p>Custom Pizza Co &#8226; 1235 Custom Pizza Co Dr &#8226; (123) 123-5555 &#8226; info@custompizza.com</p>
+         </footer>
+      </div>
+   </body>
+</html>
